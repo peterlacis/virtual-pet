@@ -3,7 +3,7 @@ function View(controller) {
 	this.createPetHTML = function(pet) {
 		var $button = $("<button>Play!</button>");
 		$button.attr("id", "play" + pet.name);
-		
+
 		var $button2 = $("<button>Feed!</button2>");
 		$button2.attr("id", "feed" + pet.name);
 
@@ -50,7 +50,7 @@ function View(controller) {
 	this.createPet = function() {
 		var name = $('#petname').val();
 		controller.addPet(name);
-		controller.decayInterval(name);
+		// controller.decayInterval(name);
 		this.showAllPets();
 	}
 

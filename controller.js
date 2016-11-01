@@ -27,14 +27,14 @@ function Controller(model) {
 		return model.getAllPets();
 	}
 
-	this.decayInterval = function(name) {
-		setInterval(function() {
-		var p = model.getPetByName(name);
-		p.hunger -= -5;
-		p.play -= -5;
-		model.getAllPets();
-		}, 5000); 
-	}
+	// this.decayInterval = function(name) {
+	// 	setInterval(function() {
+	// 	var p = model.getPetByName(name);
+	// 	p.hunger -= -5;
+	// 	p.play -= -5;
+	// 	model.getAllPets();
+	// 	}, 5000);
+	// }
 
 
 }
